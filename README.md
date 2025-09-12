@@ -32,8 +32,6 @@ Dataset berisi informasi kandidat dan strategi rekrutmen dengan beberapa fitur:
 - **Optuna**: Hyperparameter Tuning  
 - **Imbalanced-learn**: SMOTE untuk menangani imbalance class  
 - **statsmodels**: VIF untuk mendeteksi multikolinearitas  
-- **SHAP**: interpretabilitas model  
-- **joblib**: penyimpanan model  
 - **Pandas, Numpy, Matplotlib, Seaborn**: data processing & visualization 
 
 ## Cara Menjalankan
