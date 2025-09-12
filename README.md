@@ -1,4 +1,4 @@
-## Recruitment Prediction
+## Recruitment Prediction - Pancarona Group
 Final Project - Data Science by Rakamin Batch 57 Kelompok 1
 
 ## Authors
