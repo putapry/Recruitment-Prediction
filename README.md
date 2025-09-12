@@ -1,3 +1,12 @@
+## Recruitment Prediction
+Final Project - Data Science by Rakamin Batch 57 Kelompok 1
+
+## Authors
+- Putri Apryanti as Project Manager
+- Qurrata A'yun as Data Scientist
+- M Faisol Akbar as Data Engineer
+- Evan Fikri Mahendra as Data Analyst
+
 # Project Overview
 
 An efficient and effective recruitment process is crucial for organizational success, as top talent drives productivity, innovation, and competitiveness. Although the quality of hired candidates is relatively strong (58%), the average recruitment cost ($804.20) and time-to-fill (29.7 days) indicate significant inefficiencies. The high costs and lengthy process hinder growth and strain the budget, highlighting the need for a data-driven approach to optimize recruitment, improve efficiency, and secure top talent.
@@ -8,12 +17,6 @@ The final goal is to recommend the most effective model to improve recruitment e
 - Reduce hiring time by up to **60%**.  
 - Improve candidate quality by up to **40%**.  
 - Achieve an F1 Score of **70%** or higher. 
-
-## Authors
-- Putri Apryanti as Project Manager
-- Qurrata A'yun as Data Scientist
-- M Faisol Akbar as Data Engineer
-- Evan Fikri Mahendra as Data Analyst
   
 ## Dataset
 The dataset (sourced from Kaggle) contains information about candidates’ demographic background, education, experience, and recruitment outcomes.  
@@ -35,7 +38,7 @@ Key attributes include:
    - Splitting the dataset into **train** and **test sets**. 
 
 3. **Modeling**  
-   - Models tested: Logistic Regression, Random Forest, Decision Tree, XGBoost, CatBoost  
+   - Models tested: **Logistic Regression, Random Forest, Decision Tree, XGBoost, CatBoost**  
    - Hyperparameter tuning with **RandomizedSearchCV**, **Optuna** and **GridSearchCV**  
 
 4. **Evaluation**  
