@@ -26,10 +26,11 @@ Key attributes include:
    - Identified key factors influencing recruitment outcomes.  
 
 2. **Preprocessing & Feature Engineering**  
-   - Handling anomaly 
+   - Handling anomalies 
    - Encoding categorical variables  
-   - Feature normalization  
-   - Handling imbalance class  
+   - Normalizing numerical features with **StandardScaler**.
+   - Handling imbalanced classes using **SMOTE**.  
+   - Splitting the dataset into **train** and **test sets**.  
 
 3. **Modeling**  
    - Models tested: Logistic Regression, Random Forest, Decision Tree, XGBoost, CatBoost  
@@ -38,16 +39,6 @@ Key attributes include:
 4. **Evaluation**  
    - Metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC
   
-## Data Exploration & Preprocessing
-The steps performed in this phase include:  
-- Checking data distributions (age, experience, interview scores, etc.).  
-- Handling anomalies/outliers.  
-- Encoding categorical variables (e.g., Gender, EducationLevel, RecruitmentStrategy).  
-- Normalizing numerical features with **StandardScaler**.  
-- Feature engineering: creating more representative features.  
-- Handling imbalanced classes using **SMOTE**.  
-- Splitting the dataset into **train** and **test sets**.  
-
 ### Model Evaluation Results
 
 Summary of evaluation results shows that:  
