@@ -1,61 +1,68 @@
-# Recruitment-Prediction
+# Project Overview
 
-Proyek machine learning untuk efisiensi rekrutmen dengan tujuan **menurunkan biaya rekrutmen, mempercepat waktu perekrutan, dan meningkatkan kualitas kandidat** yang diterima.
-
-## Dataset
-Dataset berisi informasi kandidat dan strategi rekrutmen dengan beberapa fitur:
-
-- **Feature**:  
-  `Age`, `Gender`, `EducationLevel`, `ExperienceYears`, `PreviousCompanies`, `DistanceFromCompany`, `InterviewScore`, `SkillScore`, `PersonalityScore`,  `RecruitmentStrategy`.
-
-- **Label**:  
-  `HiringDecision` (diterima / tidak).
-
-## Tujuan
-1. Memprediksi keputusan penerimaan kandidat.  
-2. Mengevaluasi strategi rekrutmen berdasarkan biaya, waktu, dan kualitas hire.  
+An efficient and effective recruitment process is crucial for organizational success, as top talent drives productivity, innovation, and competitiveness. Although the quality of hired candidates is relatively strong (58%), the average recruitment cost ($804.20) and time-to-fill (29.7 days) indicate significant inefficiencies. The high costs and lengthy process hinder growth and strain the budget, highlighting the need for a data-driven approach to optimize recruitment, improve efficiency, and secure top talent.
+The final goal is to recommend the most effective model to improve recruitment efficiency and accuracy.
 
 ## Business Metrics
-- Mengurangi biaya rekrutmen hingga **45%**.  
-- Mengurangi waktu rekrutmen hingga **60%**.  
-- Meningkatkan kualitas kandidat hingga **40%**.
-- Mencapai F1 Score **70%**. 
+- Reduce recruitment costs by up to **45%**.  
+- Reduce hiring time by up to **60%**.  
+- Improve candidate quality by up to **40%**.  
+- Achieve an F1 Score of **70%** or higher. 
 
-## Teknologi
-- **Python** (Google Colab / Jupyter Notebook)  
-- **scikit-learn**: Logistic Regression, Decision Tree, Random Forest, GridSearchCV, RandomizedSearchCV, preprocessing  
-- **XGBoost**: XGBClassifier  
-- **CatBoost**: CatBoostClassifier  
-- **Optuna**: Hyperparameter Tuning  
-- **Imbalanced-learn**: SMOTE untuk menangani imbalance class  
-- **statsmodels**: VIF untuk mendeteksi multikolinearitas  
-- **Pandas, Numpy, Matplotlib, Seaborn**: data processing & visualization 
+## Authors
+- Putri Apryanti as Project Manager
+- Qurrata A'yun as Data Scientist
+- M Faisol Akbar as Data Engineer
+- Evan Fikri Mahendra as Data Analyst
+  
+## Dataset
+The dataset (sourced from Kaggle) contains information about candidates’ demographic background, education, experience, and recruitment outcomes.  
+Key attributes include:
+  `Age`, `Gender`, `EducationLevel`, `ExperienceYears`, `PreviousCompanies`, `DistanceFromCompany`, `InterviewScore`, `SkillScore`, `PersonalityScore`,  `RecruitmentStrategy`, `HiringDecision`.
 
-## Cara Menjalankan
-1. Download file `Recruitment_Prediction.ipynb` dari repository ini.
-2. Buka file tersebut di Jupyter Notebook atau Google Colab.
-3. Jalankan setiap cell secara berurutan.
+ ## Methodology
+1. **Exploratory Data Analysis (EDA)**  
+   - Analyzed distributions, correlations, and candidate characteristics.  
+   - Identified key factors influencing recruitment outcomes.  
 
+2. **Preprocessing & Feature Engineering**  
+   - Handling anomaly 
+   - Encoding categorical variables  
+   - Feature normalization  
+   - Handling imbalance class  
+
+3. **Modeling**  
+   - Models tested: Logistic Regression, Random Forest, Decision Tree, XGBoost, CatBoost  
+   - Hyperparameter tuning with **RandomizedSearchCV**, **Optuna** and **GridSearchCV**  
+
+4. **Evaluation**  
+   - Metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC
+  
 ## Data Exploration & Preprocessing
-Langkah-langkah yang dilakukan pada tahap ini antara lain:
-- Mengecek distribusi data (usia, pengalaman, skor interview, dll).
-- Menangani data anomali.
-- Encoding variabel kategorikal (misalnya Gender, EducationLevel, RecruitmentStrategy).
-- Normalisasi fitur numerik dengan **StandardScaler**.
-- Feature engineering: membuat kolom yang lebih representatif.
-- Handling imbalance class menggunakan **SMOTE**.
-- Split data menjadi **train** dan **test set**.
+The steps performed in this phase include:  
+- Checking data distributions (age, experience, interview scores, etc.).  
+- Handling anomalies/outliers.  
+- Encoding categorical variables (e.g., Gender, EducationLevel, RecruitmentStrategy).  
+- Normalizing numerical features with **StandardScaler**.  
+- Feature engineering: creating more representative features.  
+- Handling imbalanced classes using **SMOTE**.  
+- Splitting the dataset into **train** and **test sets**.  
 
-### Hasil Evaluasi Model
+### Model Evaluation Results
 
-Ringkasan hasil evaluasi menunjukkan bahwa:
-- **Logistic Regression** konsisten memberikan baseline yang stabil, namun performanya lebih rendah dibanding model lain.
-- **Decision Tree** cukup sederhana, tetapi cenderung overfitting dengan performa yang fluktuatif.
-- **Random Forest** memberikan hasil lebih baik dengan F1-Score stabil di atas 0.88.
-- **XGBoost** menunjukkan peningkatan signifikan, terutama setelah tuning, dengan F1-Score hingga 0.89.
-- **CatBoost** menghasilkan performa terbaik secara konsisten. Dengan GridSearch dan Randomized Search mencapai **F1-Score ~0.92**, sedangkan dengan Optuna performanya tetap tinggi (**F1-Score ~0.91**).
+Summary of evaluation results shows that:  
+- **Logistic Regression** consistently provides a stable baseline, but with lower performance compared to other models.  
+- **Decision Tree** is simple but tends to overfit with fluctuating performance.  
+- **Random Forest** performs better with F1-Score consistently above 0.88.  
+- **XGBoost** demonstrates significant improvement, especially after tuning, achieving F1-Score up to 0.89.  
+- **CatBoost** delivers the best and most consistent performance. With GridSearch and Randomized Search it reaches an **F1-Score of ~0.92**, while Optuna also achieves a strong result (**F1-Score ~0.91**).  
 
-**Kesimpulan:**  
-Hasil evaluasi menunjukkan bahwa model dengan performa terbaik diperoleh dari algoritma **CatBoost** yang dioptimasi menggunakan **Randomized Search**, dengan nilai **Precision** sebesar **0.93**, **Recall** sebesar **0.92**, dan **F1-score** sebesar **0.93**. Pencapaian ini menegaskan bahwa Randomized Search mampu menemukan kombinasi hyperparameter yang lebih optimal dibandingkan GridSearch dan Optuna, sehingga menghasilkan kinerja model yang unggul dalam memprediksi keputusan rekrutmen.
+**Conclusion:**  
+The evaluation results show that the best performing model is **CatBoost**, optimized using **Randomized Search**, achieving **Precision = 0.93**, **Recall = 0.92**, and **F1-Score = 0.93**. This result highlights that Randomized Search was able to find a more optimal set of hyperparameters compared to GridSearch and Optuna, resulting in a superior model performance for predicting recruitment decisions.
+ 
+## How to Run
+1. Download the file `Recruitment_Prediction.ipynb` from this repository.  
+2. Open the file in Jupyter Notebook or Google Colab.  
+3. Run each cell sequentially.  
 
 
