@@ -6,10 +6,7 @@ Proyek machine learning untuk efisiensi rekrutmen dengan tujuan **menurunkan bia
 Dataset berisi informasi kandidat dan strategi rekrutmen dengan beberapa fitur:
 
 - **Data kandidat**:  
-  `Age`, `Gender`, `EducationLevel`, `ExperienceYears`, `PreviousCompanies`, `DistanceFromCompany`, `InterviewScore`, `SkillScore`, `PersonalityScore`.
-
-- **Data rekrutmen**:  
-  `RecruitmentStrategy`, `StrategyName`, `Cost`, `Time to Hire`, `Quality of Hire`.
+  `Age`, `Gender`, `EducationLevel`, `ExperienceYears`, `PreviousCompanies`, `DistanceFromCompany`, `InterviewScore`, `SkillScore`, `PersonalityScore`,  `RecruitmentStrategy`.
 
 - **Label**:  
   `HiringDecision` (diterima / tidak).
