@@ -29,8 +29,10 @@ Key attributes include:
    - Handling anomalies 
    - Encoding categorical variables  
    - Normalizing numerical features with **StandardScaler**.
+   - Create new features to enhance model performance (e.g., **TotalScore**, **AvgJobTenure**, **Skill_Experience_Interaction**).
+   - Select the most relevant features for modeling using **Feature Importance**
    - Handling imbalanced classes using **SMOTE**.  
-   - Splitting the dataset into **train** and **test sets**.  
+   - Splitting the dataset into **train** and **test sets**. 
 
 3. **Modeling**  
    - Models tested: Logistic Regression, Random Forest, Decision Tree, XGBoost, CatBoost  
