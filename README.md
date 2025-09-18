@@ -48,11 +48,17 @@ Key attributes include:
 
 Summary of evaluation results shows that:  
 - **Logistic Regression & Decision Tree**: Stable performance (F1 ≈ 0.86 and 0.84). Hyperparameter tuning had no meaningful impact.
-- **Random Forest**: Strong baseline (F1 ≈ 0.88). Slight improvement with GridSearch (0.886), and consistent gains with Randomized Search & Optuna (≈0.882).
-- **XGBoost**: Highly responsive to tuning. Improved from baseline 0.874 → GridSearch 0.899 → best with Randomized Search (0.907).
+- **Random Forest**: Strong baseline (F1 ≈ 0.88). Slight improvement with GridSearch (0.886), and consistent gains with Randomized Search & Optuna (≈ 0.882 and 0.899).
+- **XGBoost**: Highly responsive to tuning. Improved from baseline 0.874 → GridSearch 0.899 → best with Randomized Search & Optuna (0.907).
 - **CatBoost**: Strongest performer. High baseline (0.908) further optimized with Optuna to 0.913.
 
 **Conclusion**: Based on a comprehensive analysis of the **F1 Score** metric, the best model to apply is **CatBoost** with hyperparameter tuning using **Optuna**.
+
+## Business Recommendation
+
+- Utilize the Dashboard for Data-Driven Selection: Use the Dashboard for Real-Time Scoring by Inputting interview and test data directly. Prioritize candidates using the “Recruitment Score” and “Prediction Status”.
+- Optimize Recruitment Strategies: Reallocate Budget Effectively. Redirect budget from ineffective recruitment strategies to proven effective recruitment methods that yield high-quality candidates, based on feature importance data.
+
  
 ## How to Run
 1. Download the file `Recruitment_Prediction.ipynb` from this repository.  
