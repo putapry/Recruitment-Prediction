@@ -62,8 +62,11 @@ Summary of evaluation results shows that:
 ## Business Recommendation
 
 - Utilize the Dashboard for Data-Driven Selection: Use the Dashboard for Real-Time Scoring by Inputting interview and test data directly. Prioritize candidates using the “Recruitment Score” and “Prediction Status”.
-- Optimize Recruitment Strategies: Reallocate Budget Effectively. Redirect budget from ineffective recruitment strategies to proven effective recruitment methods that yield high-quality candidates, based on feature importance data.
-- Add ‘Considered’ Category – Introduce a middle category to capture potential talent overlooked by the binary Hired/Not Hired model.
+- Creating a 'Considered' candidate category: Establish a score threshold that separates candidates into 'Hired', 'Considered', and 'Not Hired'.
+- Implement Model Monitoring and Regular Retraining: Conduct model evaluation every 6–12 months using the latest recruitment data.
+- Optimize Recruitment Strategies: Prioritize budget and resources for Strategy 1, while maintaining Strategy 2 and 3 as complementary channels to ensure diversified candidate sources.
+- Implement Fast-Track Pathway for High-Potential Candidates: Create a special recruitment track for candidates with high experience and education level 4.
+- Adopt Automated Scoring with Cut-Off Thresholds: Set a minimum cut-off score across the three assessment aspects to streamline candidate screening. 
  
 ## How to Run
 1. Download the file `Recruitment_Prediction.ipynb` from this repository.  
