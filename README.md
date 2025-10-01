@@ -55,9 +55,9 @@ Summary of evaluation results shows that:
 **Conclusion**: Based on a comprehensive analysis of the **F1 Score** metric, the best model to apply is **CatBoost** with hyperparameter tuning using **Optuna**.
 
 ## Business Impact
-- Cost Efficiency – Machine Learning implementation is projected to reduce recruitment costs by up to 45%, lowering the average cost per hire from around $804.20 to $442.31.
-- Time-to-Hire Reduction – The recruitment process can be shortened by 60%, cutting the average hiring time from 29.7 days to about 11.9 days.
-- Improved Candidate Quality – Candidate quality is expected to increase by 40%, raising the success rate of qualified hires from 58% to approximately 81%.
+- Cost Efficiency – Machine Learning implementation is projected to reduce recruitment costs by up to 36%, lowering the average cost per hire from around $804.20 to $511.0.
+- Time-to-Hire Reduction – The recruitment process can be shortened by 36%, cutting the average hiring time from 29.7 days to about 18.9 days.
+- Improved Candidate Quality – Candidate quality is expected to increase by 57%, raising the success rate of qualified hires from 58% to approximately 91.3%.
 
 ## Business Recommendation
 
